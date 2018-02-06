@@ -1,0 +1,10 @@
+version: "3.4"
+services:
+  recsys:
+    image: inpefess/recsys_course:latest
+    ports:
+      - "8888:8888"
+      - "4040:4040"
+    volumes:
+      - .:/code
+      - ~/recsys_course_data:/data/other
